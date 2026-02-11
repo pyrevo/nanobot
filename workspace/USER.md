@@ -5,6 +5,8 @@
 - **Nome**: Massimiliano
 - **Timezone**: Europe/Rome (CET/CEST)
 - **Lingua**: Italiano (termini tecnici in inglese OK)
+- **Età**: 39 anni
+- **Residenza**: Malmö (Svezia)
 
 ## Preferenze
 
