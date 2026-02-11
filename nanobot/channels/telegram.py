@@ -198,6 +198,7 @@ class TelegramChannel(BaseChannel):
             html_content = _markdown_to_telegram_html(msg.content)
             await self._app.bot.send_message(
                 chat_id=chat_id,
+                message_thread_id=msg.metadata.get("message_thread_id"),
                 text=html_content,
                 parse_mode="HTML"
             )
@@ -209,6 +210,7 @@ class TelegramChannel(BaseChannel):
             try:
                 await self._app.bot.send_message(
                     chat_id=int(msg.chat_id),
+                    message_thread_id=msg.metadata.get("message_thread_id"),
                     text=msg.content
                 )
             except Exception as e2:
@@ -359,7 +361,8 @@ class TelegramChannel(BaseChannel):
                 "user_id": user.id,
                 "username": user.username,
                 "first_name": user.first_name,
-                "is_group": message.chat.type != "private"
+                "is_group": message.chat.type != "private",
+                "message_thread_id": message.message_thread_id
             }
         )
     

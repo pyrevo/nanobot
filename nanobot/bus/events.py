@@ -20,6 +20,10 @@ class InboundMessage:
     @property
     def session_key(self) -> str:
         """Unique key for session identification."""
+        if self.metadata and "message_thread_id" in self.metadata:
+            thread_id = self.metadata["message_thread_id"]
+            if thread_id:  # Only if not None
+                return f"{self.channel}:{self.chat_id}:{thread_id}"
         return f"{self.channel}:{self.chat_id}"
 
 
