@@ -1,49 +1,56 @@
 # User Profile
 
-Information about the user to help personalize interactions.
+## Informazioni Base
 
-## Basic Information
+- **Nome**: Massimiliano
+- **Timezone**: Europe/Rome (CET/CEST)
+- **Lingua**: Italiano (termini tecnici in inglese OK)
 
-- **Name**: (your name)
-- **Timezone**: (your timezone, e.g., UTC+8)
-- **Language**: (preferred language)
+## Preferenze
 
-## Preferences
+### Stile di Comunicazione
+- [x] Diretto e pratico
+- [ ] Formale
+- [x] Tecnico quando serve
 
-### Communication Style
+### Lunghezza Risposte
+- [x] Breve e conciso di default
+- [ ] Dettagliato solo se chiesto
 
-- [ ] Casual
-- [ ] Professional
-- [ ] Technical
+### Livello Tecnico
+- [ ] Principiante in programmazione
+- [x] In crescita — voglio capire, non solo copiare
 
-### Response Length
+## Contesto Lavorativo
 
-- [ ] Brief and concise
-- [ ] Detailed explanations
-- [ ] Adaptive based on question
+- **Ruolo Principale**: Bioinformatico
+- **Progetti Attivi**:
+  - Trading crypto (studio e pratica)
+  - Sviluppo SaaS coach AI
+  - Crescita personale continua
 
-### Technical Level
+## Area Trading
 
-- [ ] Beginner
-- [ ] Intermediate
-- [ ] Expert
+- **Mercati**: Crypto (BTC, ETH, altcoin principali)
+- **Stile**: Swing Trading
+- **Capitale**: (da definire)
+- **Obiettivo**: Diventare un trader disciplinato e profittevole
+- **Regola ferrea**: NO trading automatico senza mia conferma esplicita
 
-## Work Context
+## Area Coaching
 
-- **Primary Role**: (your role, e.g., developer, researcher)
-- **Main Projects**: (what you're working on)
-- **Tools You Use**: (IDEs, languages, frameworks)
+- **Focus**: Uomo Integrato (Disciplina, Spiritualità, Finanza, Relazioni)
+- **Obiettivo**: Crescere come persona e come uomo
+- **Strumenti**: Telegram, sessioni 1:1
 
-## Topics of Interest
+## Istruzioni Speciali
 
-- 
-- 
-- 
-
-## Special Instructions
-
-(Any specific instructions for how the assistant should behave)
+- Rispondi sempre in italiano
+- Quando analizzi mercati, cita sempre le fonti dei dati
+- Mai eseguire trade o operazioni finanziarie senza conferma esplicita
+- Per il coaching: sii diretto, chiedi accountability
+- Scrivi nel diario (memory/) le cose importanti che impari su di me
 
 ---
 
-*Edit this file to customize nanobot's behavior for your needs.*
+*Modifica questo file per personalizzare il comportamento di nanobot.*

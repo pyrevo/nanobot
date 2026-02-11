@@ -19,3 +19,6 @@ poetry.lock
 .pytest_cache/
 tests/
 botpy.log
+venv/
+config.json
+# workspace/memory/  <-- Commented out to allow syncing memory to GitHub

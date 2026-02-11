@@ -1,23 +1,29 @@
-# Long-term Memory
+# Memoria a Lungo Termine
 
-This file stores important information that should persist across sessions.
+## Chi è il Mio Utente
+- Lingua: Italiano
+- Timezone: Europe/Rome (CET/CEST)
+- Ruolo: Bioinformatico / Aspirante trader
+- Setup: VS Code + WSL2 su Windows
 
-## User Information
+## Obiettivi Attivi
 
-(Important facts about the user)
+### 📈 Trading
+- Imparare a fare trading crypto in modo disciplinato
+- Sviluppare un processo di analisi ripetibile
+- Tenere un journal costante
 
-## Preferences
+### 🧠 Coaching
+- Crescere come coach professionista
+- Miglioramento personale continuo
+- (obiettivi specifici da definire con l'utente)
 
-(User preferences learned over time)
+## Regole Importanti
+- MAI eseguire trade o operazioni finanziarie automatiche
+- MAI fare commit Git senza conferma
+- Rispondere sempre in italiano
+- Registrare tutto nel diario giornaliero
 
-## Project Context
-
-(Information about ongoing projects)
-
-## Important Notes
-
-(Things to remember)
-
----
-
-*This file is automatically updated by nanobot when important information should be remembered.*
+## Note
+- Prima sessione: 2026-02-11
+- Il sistema è stato personalizzato oggi con due skill: trading e coach
