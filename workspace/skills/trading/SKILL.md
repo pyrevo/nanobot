@@ -141,10 +141,18 @@ Per strategie MTF:
 - ❌ Prendere decisioni bindanti senza conferma dell'utente
 
 ## Sandbox
-Scrivi ed esegui gli script Python nella cartella: `workspace/sandbox/`
-Salva i risultati nella cartella: `workspace/memory/backtest_results/`
+Scrivi ed esegui gli script Python nella cartella: `workspace/sandbox/`.
+**IMPORTANTE**: Salva SEMPRE i risultati dei backtest in `workspace/memory/backtest_results/` usando il tool `write_file`.
 
-## Trading Journal
+## Trading Journal (Accountability)
+
+**OBBLIGATORIO**: Dopo ogni analisi significativa o segnale, devi registrare l'entry usando il tool `write_file` o `edit_file`. **NON limitarti a dire che lo hai fatto.**
+
+### Procedura:
+1. Usa il nome file: `workspace/memory/YYYY-MM-DD.md` (es. `workspace/memory/2026-02-12.md`).
+2. Se il file non esiste, usa `write_file`. Se esiste, usa `edit_file`.
+
+### Formato obbligatorio dell'entry:
 ```markdown
 ## Trading Journal — [Data]
 **Asset**: BTC/USDT
@@ -154,8 +162,8 @@ Salva i risultati nella cartella: `workspace/memory/backtest_results/`
 **Stop Loss**: $XX,XXX
 **Take Profit**: $XX,XXX
 **R:R**: X:X
-**Risultato**: [in corso / chiuso]
-**Note**: [lezioni apprese]
+**Sentiment**: (Polymarket + F&G)
+**Note**: [motivazione tecnica]
 ```
 
 ## Regole di Sicurezza
