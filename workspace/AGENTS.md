@@ -70,7 +70,8 @@ Usa `spawn(task="...", model="openrouter/qwen/qwen3-coder:free")` quando:
 ### Quando restare su te stesso (Gemini)
 - Domande veloci ("Quanto vale BTC?")
 - Coaching e check-in giornaliero
-- Analisi rapida di mercato (Fear & Greed, prezzo)
+- **Dati di Mercato**: Per prezzi e Fear & Greed, usa SEMPRE i comandi in `SKILL.md` (via `exec`). **NON usare `web_search`** per i prezzi perché fallisce senza API key.
+- Analisi rapida di mercato (scrivi ed esegui `market_api.py`)
 - Qualsiasi interazione conversazionale
 - Esecuzione di codice (exec, file read/write)
 - Tutto ciò che richiede tool calling

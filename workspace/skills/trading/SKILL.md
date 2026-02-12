@@ -35,36 +35,42 @@ spawn(
 
 ## Ottenere Prezzi in Tempo Reale
 
-### CoinGecko (gratuito, no API key)
+Usa lo script Python dedicato per i dati di mercato. È più affidabile della ricerca web generica (che richiede una API key).
+
+### Prezzo attuale (BTC/ETH)
 ```bash
-curl -s "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd,eur" | python3 -m json.tool
+python3 workspace/skills/trading/market_api.py price
 ```
 
 ### Fear & Greed Index
 ```bash
-curl -s "https://api.alternative.me/fng/?limit=1" | python3 -m json.tool
+python3 workspace/skills/trading/market_api.py fng
 ```
 
-### Dati Storici (via ccxt — per backtesting)
+### Sentiment Polymarket (Oracle)
+```bash
+python3 workspace/skills/market_sentiment/polymarket.py Bitcoin
+```
+
+## Dati Storici (via ccxt — per backtesting)
+Usa uno script Python con `ccxt` nella sandbox.
 ```python
 import ccxt
 import pandas as pd
 
 exchange = ccxt.binance()
-ohlcv = exchange.fetch_ohlcv('BTC/USDT', '1h', limit=2160)  # ~3 mesi
-df = pd.DataFrame(ohlcv, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
-df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
-df.set_index('timestamp', inplace=True)
+# ... scarica dati ...
 ```
 
-## Framework di Analisi Rapida (per te, Gemini)
+## Framework di Analisi Rapida (per tu, Gemini)
 
 Quando l'utente chiede un'analisi veloce:
-1. **Contesto Macro**: Prezzo attuale + variazione 24h + Fear & Greed
-2. **Struttura di Mercato**: Trend (bullish/bearish/laterale)
-3. **Livelli Chiave**: Supporto e resistenza immediati
-4. **Bias**: La tua opinione (bullish/bearish/neutro)
-5. **Piano**: Cosa faresti (NO ordini automatici!)
+1. **Dati Reali**: Esegui `market_api.py price` e `fng` prima di rispondere. **NON inventare i prezzi**.
+2. **Contesto Macro**: Prezzo attuale + variazione 24h + Fear & Greed.
+3. **Sentimento Reale**: Usa `polymarket.py` per vedere cosa scommette la gente.
+4. **Struttura di Mercato**: Trend (bullish/bearish/laterale).
+5. **Bias**: La tua opinione (bullish/bearish/neutro).
+6. **Piano**: Cosa faresti (NO ordini automatici!).
 
 ## Backtesting Quantitativo (per DeepSeek via spawn)
 
